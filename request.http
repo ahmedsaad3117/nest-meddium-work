@@ -1,1 +1,14 @@
+### Get all tags
 GET http://localhost:3000/tags  
+
+### Create new user
+Post http://localhost:3000/users
+content-Type: application/json
+
+{
+    "user": {
+        "username": "foo",
+        "email": "foo@gmail.com",
+        "password": "123"
+    }
+} 
