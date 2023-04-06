@@ -1,6 +1,12 @@
 ### Get all tags
 GET http://localhost:3000/tags  
 
+### Get one user
+GET http://localhost:3000/users/me
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+
+
 ### Create new user
 Post http://localhost:3000/users
 content-Type: application/json
@@ -8,6 +14,18 @@ content-Type: application/json
 {
     "user": {
         "username": "foo",
+        "email": "foo@gmail.com",
+        "password": "123"
+    }
+} 
+
+### Login User
+Post http://localhost:3000/users/login
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+
+{
+    "user": {
         "email": "foo@gmail.com",
         "password": "123"
     }
