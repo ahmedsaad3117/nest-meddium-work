@@ -8,6 +8,7 @@ import { JWT_SECERT } from "@app/config";
 import { UserResponseInterface } from "./types/userResponse.interface";
 import { LoginUserDto } from "./dtos/loginUser.dto";
 import { compare} from 'bcrypt'
+import { UpdateUserDto } from "./dtos/updateUser.dto";
 
 @Injectable({})
 export class UserService {
@@ -31,6 +32,13 @@ export class UserService {
         Object.assign(newUser, createUserDto)
         console.log(newUser)
         return await this.userRepository.save(newUser)
+    }
+
+    async updateUser(userId: number, updateUserDto: UpdateUserDto): Promise<UserEntity>{
+        const user = await this.findById(userId)
+        Object.assign(user, updateUserDto)
+
+        return await this.userRepository.save(user)
     }
 
     generateJWT(user: UserEntity): string {

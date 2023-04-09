@@ -1,0 +1,54 @@
+### Create new article
+Post http://localhost:3000/articles
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+
+
+{
+    "article": {
+        "title": "How to train your dragon",
+        "description": "Ever wonder how",
+        "body": "you have to body",
+        "tagList": []
+    }
+} 
+
+
+### get article by slug
+Get http://localhost:3000/articles/how-to-train-your-dragon-xi7hh3
+content-Type: application/json
+
+
+### delete article by slug
+Delete http://localhost:3000/articles/how-to-train-your-dragon-wkhbfl
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+
+
+{
+    "article": {
+        "title": "How to train your dragon",
+        "description": "Ever wonder how",
+        "body": "you have to body",
+        "tagList": []
+    }
+} 
+
+### update article by slug
+Put http://localhost:3000/articles/how-to-train-your-dragon-wkhbfl
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+
+
+{
+    "article": {
+        "title": "new title 9s here"
+    }
+} 
+
+
+### Get all articles
+Get http://localhost:3000/articles
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+
