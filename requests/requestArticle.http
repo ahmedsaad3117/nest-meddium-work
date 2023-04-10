@@ -1,7 +1,7 @@
 ### Create new article
 Post http://localhost:3000/articles
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
 
 
 {
@@ -9,7 +9,7 @@ Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbW
         "title": "How to train your dragon",
         "description": "Ever wonder how",
         "body": "you have to body",
-        "tagList": []
+        "tagList": ["dog","bird","cat"]
     }
 } 
 
@@ -22,7 +22,7 @@ content-Type: application/json
 ### delete article by slug
 Delete http://localhost:3000/articles/how-to-train-your-dragon-wkhbfl
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
 
 
 {
@@ -37,7 +37,7 @@ Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbW
 ### update article by slug
 Put http://localhost:3000/articles/how-to-train-your-dragon-wkhbfl
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
 
 
 {
@@ -50,5 +50,43 @@ Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbW
 ### Get all articles
 Get http://localhost:3000/articles
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
 
+
+### Get all articles by limit and offset
+Get http://localhost:3000/articles?limit=2&offset=0
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+
+
+### Get all articles by tags
+Get http://localhost:3000/articles?tag=bird
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+
+
+### Get all articles by username
+Get http://localhost:3000/articles?author=foo
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+
+
+
+### add favorite article to user array 
+Post http://localhost:3000/articles/how-to-train-your-dragon-i9zmoq/favorite
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+ 
+
+### delete favorite article from user array 
+DELETE http://localhost:3000/articles/how-to-train-your-dragon-i9zmoq/favorite
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+ 
+
+### get favorite user article 
+Get http://localhost:3000/articles?favorited=foo
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+ 
+ 

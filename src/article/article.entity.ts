@@ -1,5 +1,5 @@
 import { UserEntity } from "@app/user/user.entity";
-import { BeforeUpdate, Column, Entity, ManyToMany, ManyToOne, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
+import { BeforeUpdate, Column, Entity, JoinTable, ManyToMany, ManyToOne, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity({ name: 'articles' })
 export class ArticleEntity {
@@ -37,7 +37,10 @@ export class ArticleEntity {
         this.updatedAt = new Date()
     }
 
-    @ManyToOne(() => UserEntity, (user) => user.articles, { eager: true }
-    )
+    @ManyToOne(() => UserEntity, (user) => user.articles, { eager: true })
     author: UserEntity;
+
+    @ManyToMany(()=> ArticleEntity)
+    @JoinTable()
+    favorites: ArticleEntity[]
 }

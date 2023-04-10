@@ -4,7 +4,7 @@ GET http://localhost:3000/tags
 ### Get one user
 GET http://localhost:3000/users/me
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
 
 
 ### Create new user
@@ -22,7 +22,7 @@ content-Type: application/json
 ### Login User
 Post http://localhost:3000/users/login
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
 
 {
     "user": {
@@ -35,7 +35,7 @@ Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbW
 ### update user
 PUT http://localhost:3000/users
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODA3Nzk3MDR9.b7f8lgUACzl5XkWTtY6QoPwqgqWgzD7kEnLTbBS3bV4
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
 
 {
     "user": {

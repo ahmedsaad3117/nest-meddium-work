@@ -1,0 +1,4 @@
+### Get one user
+GET http://localhost:3000/profiles/foo
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTgyODJ9.n4TyrEm5_bdNrIzrR9pMdLoLfr9ETRjnL1Gm0cjt3VA
