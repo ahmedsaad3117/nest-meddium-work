@@ -8,6 +8,7 @@ import { ExpressRequest } from "@app/types/expressRequest.interface"
 import { User } from "./decorators/user.decorator"
 import { AuthGuard } from "./guards/auth.gusrd"
 import { UpdateUserDto } from "./dtos/updateUser.dto"
+import { BackendValidationPipe } from "@app/shared/pipes/backendValidation.pipe"
 
 @Controller('users')
 export class UserController {
@@ -15,14 +16,14 @@ export class UserController {
 
     }
     @Post()
-    @UsePipes(new ValidationPipe)
+    @UsePipes(new BackendValidationPipe)
     async createUser (@Body('user') createUserDto : CreateUserDto ): Promise<UserResponseInterface>{
         const user = await this.userService.createUser(createUserDto)
         return this.userService.buildUserResponse(user)
     } 
 
     @Post('login')
-    @UsePipes(new ValidationPipe())
+    @UsePipes(new BackendValidationPipe())
     async login(
         @Body('user') 
         loginDto: LoginUserDto

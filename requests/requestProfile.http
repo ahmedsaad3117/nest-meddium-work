@@ -1,4 +1,22 @@
 ### Get one user
-GET http://localhost:3000/profiles/foo
+GET http://localhost:3000/profiles/foo2
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTgyODJ9.n4TyrEm5_bdNrIzrR9pMdLoLfr9ETRjnL1Gm0cjt3VA
+
+
+### Follow current user
+Post http://localhost:3000/profiles/foo/follow
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTgyODJ9.n4TyrEm5_bdNrIzrR9pMdLoLfr9ETRjnL1Gm0cjt3VA
+
+
+### Follow anthoer user
+Post http://localhost:3000/profiles/foo2/follow
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTgyODJ9.n4TyrEm5_bdNrIzrR9pMdLoLfr9ETRjnL1Gm0cjt3VA
+
+
+### unfollow anthoer user
+Delete http://localhost:3000/profiles/foo2/follow
 content-Type: application/json
 Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTgyODJ9.n4TyrEm5_bdNrIzrR9pMdLoLfr9ETRjnL1Gm0cjt3VA

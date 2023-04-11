@@ -1,7 +1,7 @@
 ### Create new article
 Post http://localhost:3000/articles
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJmb28yIiwiZW1haWwiOiJmb28yQGdtYWlsLmNvbSIsImlhdCI6MTY4MTIwNjQzN30.-ySZXHF0AU581fXYofC9gzjZuRbyqHFriWT0uDIcfcs
 
 
 {
@@ -86,6 +86,12 @@ Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbW
 
 ### get favorite user article 
 Get http://localhost:3000/articles?favorited=foo
+content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+ 
+ 
+### get current user feed
+Get http://localhost:3000/articles/feed
 content-Type: application/json
 Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
  

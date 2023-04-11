@@ -4,7 +4,7 @@ GET http://localhost:3000/tags
 ### Get one user
 GET http://localhost:3000/users/me
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTgyODJ9.n4TyrEm5_bdNrIzrR9pMdLoLfr9ETRjnL1Gm0cjt3VA
 
 
 ### Create new user
@@ -13,8 +13,8 @@ content-Type: application/json
 
 {
     "user": {
-        "username": "foo",
-        "email": "foo@gmail.com",
+        "username": "foo2",
+        "email": "foo2@gmail.com",
         "password": "123"
     }
 } 
@@ -22,7 +22,7 @@ content-Type: application/json
 ### Login User
 Post http://localhost:3000/users/login
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTgyODJ9.n4TyrEm5_bdNrIzrR9pMdLoLfr9ETRjnL1Gm0cjt3VA
 
 {
     "user": {
@@ -35,10 +35,10 @@ Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbW
 ### update user
 PUT http://localhost:3000/users
 content-Type: application/json
-Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTU0NDV9.bURl1omRTMWNgWhXMJ_LT24chSNX_z2ny-gro3ALU2M
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmb28iLCJlbWFpbCI6ImZvb0BnbWFpbC5jb20iLCJpYXQiOjE2ODExMTgyODJ9.n4TyrEm5_bdNrIzrR9pMdLoLfr9ETRjnL1Gm0cjt3VA
 
 {
     "user": {
         "bio": "this is my new bio"
     }
-} 
+}
